@@ -80,12 +80,12 @@ enum DialogMark { DIALOG_MARK_NONE = 0, DIALOG_MARK_DAKUTEN = 1, DIALOG_MARK_HAN
 
 #if !defined(VERSION_JP) && !defined(VERSION_SH)
 u8 gDialogCharWidths[256] = { // TODO: Is there a way to auto generate this?
-    7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  6,  6,  6,  6,  6,  6,
+        7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  6,  6,  6,  6,  6,  6,
     6,  6,  5,  6,  6,  5,  8,  8,  6,  6,  6,  6,  6,  5,  6,  6,
     8,  7,  6,  6,  6,  5,  5,  6,  5,  5,  6,  5,  4,  5,  5,  3,
     7,  5,  5,  5,  6,  5,  5,  5,  5,  5,  7,  7,  5,  5,  4,  4,
-    8,  6,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,
-    8,  8,  8,  8,  7,  7,  6,  7,  7,  0,  0,  0,  0,  0,  0,  0,
+    8,  6,  6,  6,  5,  6,  6,  6,  8,  6,  5,  4,  5,  5,  5,  5,
+    8,  8,  8,  8,  7,  7,  6,  7,  7,  0,  0,  0,  4,  6,  0,  0,
 #ifdef VERSION_EU
     6,  6,  6,  0,  6,  6,  6,  0,  0,  0,  0,  0,  0,  0,  0,  4,
     5,  5,  5,  5,  6,  6,  6,  6,  0,  0,  0,  0,  0,  0,  0,  0,
@@ -350,15 +350,15 @@ struct MultiTextEntry {
     u8 str[4];
 };
 
-#define TEXT_THE_RAW ASCII_TO_DIALOG('t'), ASCII_TO_DIALOG('h'), ASCII_TO_DIALOG('e'), 0x00
-#define TEXT_YOU_RAW ASCII_TO_DIALOG('y'), ASCII_TO_DIALOG('o'), ASCII_TO_DIALOG('u'), 0x00
+#define TEXT_THE_RAW ASCII_TO_DIALOG('q'), ASCII_TO_DIALOG('u'), ASCII_TO_DIALOG('e'), 0x00
+#define TEXT_YOU_RAW ASCII_TO_DIALOG('p'), ASCII_TO_DIALOG('a'), ASCII_TO_DIALOG('r'), 0x00
 
 enum MultiStringIDs { STRING_THE, STRING_YOU };
 
 /*
  * Place the multi-text string according to the ID passed. (US, EU)
- * 0: 'the'
- * 1: 'you'
+ * 0: 'que'
+ * 1: 'par'
  */
 #ifdef VERSION_US
 void render_multi_text_string(s8 multiTextID) // US: 802D76C8
