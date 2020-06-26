@@ -2110,7 +2110,7 @@ Pulsa [A] para saltar, [Z]\n\
 para agacharte. Y [B] para\n\
 golpear, leer, o coger\n\
 algo.\n\
-Pulsa [B] de nuevo para\n\
+Vuelve a pulsar [B] para\n\
 lanzar lo que tengas."))
 
 DEFINE_DIALOG(DIALOG_168, 1, 5, 30, 200, _("\
