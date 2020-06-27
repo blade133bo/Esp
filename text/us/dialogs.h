@@ -140,7 +140,7 @@ limpiamente!"))
 
 DEFINE_DIALOG(DIALOG_008, 1, 4, 30, 200, _("\
 へCUIDADO CON EL CHOMP\n\
-ENCADENADO. へExtremo\n\
+ENCADENADO! へExtremo\n\
 peligro! Acさrcate y pulsa\n\
 [C]^ para ver mejor.\n\
 Impresiona, ほVerdad?\n\
