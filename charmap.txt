@@ -320,8 +320,8 @@
 '/' = 0xD0
 
 # multi-text US symbols
-'the' = 0xD1
-'you' = 0xD2
+'que' = 0xD1
+'par' = 0xD2
 
 # EU ROM symbols
 'à' = 0x60
